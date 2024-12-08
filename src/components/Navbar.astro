@@ -1,0 +1,40 @@
+---
+import type { Props } from "@astrojs/starlight/props"
+---
+
+<nav class="navbar sl-flex">
+  <ul class="flex space-x-4 list-none pr-4">
+    <li>
+      <a
+        href="/website/docs"
+        class="font-bold text-gray-500 dark:text-gray-200 no-underline"
+      >
+        Docs
+      </a>
+    </li>
+    <li>
+      <a
+        href="/website/projets"
+        class="font-bold text-gray-500 dark:text-gray-200 no-underline"
+      >
+        Projects
+      </a>
+    </li>
+    <li>
+      <a
+        href="/website/about"
+        class="font-bold text-gray-500 dark:text-gray-200 no-underline"
+      >
+        À propos
+      </a>
+    </li>
+  </ul>
+</nav>
+
+<style>
+  .navbar:after {
+    content: "";
+    height: 2rem;
+    border-inline-end: 1px solid var(--sl-color-gray-5);
+  }
+</style>

@@ -4,7 +4,9 @@ import defaultTheme from "tailwindcss/defaultTheme"
 // Generated color palettes
 const accent = {
   200: "#e3b6ed",
-  600: "#a700c3",
+  // 600: "#a700c3", // Default
+  600: "#c39bd3",
+  700: "#8d00a0",
   900: "#4e0e5b",
   950: "#36113e",
 }

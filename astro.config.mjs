@@ -9,7 +9,7 @@ export default defineConfig({
   base: "/website/",
   integrations: [
     starlight({
-      title: "Pierre Rochet",
+      title: "MLOpsfr",
       customCss: [
         // Chemin vers vos style de base de Tailwind:
         "./src/custom.css",
@@ -17,7 +17,7 @@ export default defineConfig({
         "@fontsource-variable/jost",
       ],
       social: {
-        github: "https://github.com/withastro/starlight",
+        github: "https://github.com/pirocheto",
         linkedin: "https://www.linkedin.com/in/pierre-rochet/",
       },
       sidebar: [
@@ -33,6 +33,9 @@ export default defineConfig({
           autogenerate: { directory: "reference" },
         },
       ],
+      components: {
+        Header: "./src/components/Header.astro",
+      },
     }),
     tailwind({
       // Désactive les styles de base par défaut:

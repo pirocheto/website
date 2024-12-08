@@ -1,35 +1,54 @@
 ---
-title: Pierre ROCHET
+title: Pierre Rochet
 description: Get started building your docs site with Starlight.
 template: splash
+# banner:
+#   content: |
+#     En cours de developpement
 hero:
-  tagline: Ingénieur MLOps sur AWS
-  # image:
-  #   file: ../../assets/houston.webp
+  tagline: Je suis un ingénieur DataOps et MLOps, passionné par l'IA et le Machine Learning. J'ai travaillé sur des projets de Machine Learning et d'IA générative. J'ai également une expérience dans le déploiement de modèles de Machine Learning en production.
+  image:
+    file: ../../assets/houston.webp
   actions:
     - text: Commencer la lecture
-      link: /guides/example/
+      link: https://www.linkedin.com/in/pierre-rochet-ai/
       icon: right-arrow
+    - text: Voir mon CV
+      link: https://www.linkedin.com/in/pierre-rochet-ai/
+      icon: document
+      variant: secondary
 ---
 
-import { Card, CardGrid } from '@astrojs/starlight/components';
+import { LinkCard, CardGrid, Badge } from "@astrojs/starlight/components"
 
-## Next steps
+## Présentation
 
-<CardGrid stagger>
-	<Card title="Python" icon="seti:python">
-		Guide pour apprendre les bases de Python.
-	</Card>
-	<Card title="Machine learning" icon="add-document">
-		Introduction au Machine Learning, les grands concepts et les outils.
-	</Card>
-		<Card title="LLM et IA Générative" icon="setting">
-		Découverte de l'IA générative et des grands modèles de langage et comment les utiliser.
-	</Card>
-		<Card title="Amazon Web Service" icon="setting">
-		Présentations des outils et des services du cloud AWS pour l'IA et le machine learning.
-	</Card>
-	<Card title="Projets" icon="open-book">
-		Mise en oeuvre de projets et de cas d'usage en IA sur AWS.
-	</Card>
+Je suis un ingénieur DataOps et MLOps, passionné par l'IA et le Machine Learning. J'ai travaillé sur des projets de Machine Learning et d'IA générative. J'ai également une expérience dans le déploiement de modèles de Machine Learning en production.
+
+### Parcourir les grandes thématiques
+
+<CardGrid>
+  <LinkCard
+    href="#"
+    title="Python <span class='text-xs bg-yellow-200 text-gray-700 px-2 rounded-lg align-super'>developpement<span>"
+    description="Guide pour apprendre la programmation Python, des bases aux concepts
+    avancés."
+  ></LinkCard>
+  <LinkCard
+    href="#"
+    title="ML, LLM et IA Générative <span class='text-xs bg-orange-200 text-gray-700 px-2 rounded-lg align-super'>à venir<span>"
+    description="Introduction au Machine Learning, les grands modèles de langue et les outils pour l'IA moderne."
+  />
+  <LinkCard
+    href=""
+    title="Cloud AWS <span class='text-xs bg-orange-200 text-gray-700 px-2 rounded-lg align-super'>à venir<span>"
+    description="
+    Présentations des outils et des services du cloud AWS pour l'IA et le
+    machine learning."
+  />
+  <LinkCard
+    href="#"
+    title="Case d'usage et projets <span class='text-xs bg-orange-200 text-gray-700 px-2 rounded-lg align-super'>à venir<span>"
+    description="Mise en oeuvre de projets et de cas d'usage en IA sur AWS."
+  />
 </CardGrid>
