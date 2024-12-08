@@ -14,7 +14,7 @@ export default defineConfig({
         // Chemin vers vos style de base de Tailwind:
         "./src/custom.css",
         "./src/tailwind.css",
-        "@fontsource-variable/jost",
+        "./src/assets/fonts/jost",
       ],
       social: {
         github: "https://github.com/pirocheto",
