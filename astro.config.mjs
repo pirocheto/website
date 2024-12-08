@@ -6,6 +6,7 @@ import tailwind from "@astrojs/tailwind"
 // https://astro.build/config
 export default defineConfig({
   site: "https://pirocheto.github.io",
+  base: "/website/",
   integrations: [
     starlight({
       title: "Pierre Rochet",
