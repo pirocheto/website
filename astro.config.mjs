@@ -9,7 +9,7 @@ export default defineConfig({
   base: "/website/",
   integrations: [
     starlight({
-      title: "MLOpsfr",
+      title: "MLDATA",
       customCss: [
         // Chemin vers vos style de base de Tailwind:
         "./src/custom.css",
