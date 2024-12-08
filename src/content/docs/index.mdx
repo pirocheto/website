@@ -1,19 +1,15 @@
 ---
-title: Welcome to Starlight
+title: Pierre ROCHET
 description: Get started building your docs site with Starlight.
 template: splash
 hero:
-  tagline: Congrats on setting up a new Starlight project!
-  image:
-    file: ../../assets/houston.webp
+  tagline: Ingénieur MLOps sur AWS
+  # image:
+  #   file: ../../assets/houston.webp
   actions:
-    - text: Example Guide
+    - text: Commencer la lecture
       link: /guides/example/
       icon: right-arrow
-    - text: Read the Starlight docs
-      link: https://starlight.astro.build
-      icon: external
-      variant: minimal
 ---
 
 import { Card, CardGrid } from '@astrojs/starlight/components';
@@ -21,16 +17,19 @@ import { Card, CardGrid } from '@astrojs/starlight/components';
 ## Next steps
 
 <CardGrid stagger>
-	<Card title="Update content" icon="pencil">
-		Edit `src/content/docs/index.mdx` to see this page change.
+	<Card title="Python" icon="seti:python">
+		Guide pour apprendre les bases de Python.
 	</Card>
-	<Card title="Add new content" icon="add-document">
-		Add Markdown or MDX files to `src/content/docs` to create new pages.
+	<Card title="Machine learning" icon="add-document">
+		Introduction au Machine Learning, les grands concepts et les outils.
 	</Card>
-	<Card title="Configure your site" icon="setting">
-		Edit your `sidebar` and other config in `astro.config.mjs`.
+		<Card title="LLM et IA Générative" icon="setting">
+		Découverte de l'IA générative et des grands modèles de langage et comment les utiliser.
 	</Card>
-	<Card title="Read the docs" icon="open-book">
-		Learn more in [the Starlight Docs](https://starlight.astro.build/).
+		<Card title="Amazon Web Service" icon="setting">
+		Présentations des outils et des services du cloud AWS pour l'IA et le machine learning.
+	</Card>
+	<Card title="Projets" icon="open-book">
+		Mise en oeuvre de projets et de cas d'usage en IA sur AWS.
 	</Card>
 </CardGrid>
