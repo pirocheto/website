@@ -1,12 +1,15 @@
 ---
-title: Pierre Rochet
+title: Data Ingénierie pour l'AI
 description: Get started building your docs site with Starlight.
 template: splash
 # banner:
 #   content: |
 #     En cours de developpement
 hero:
-  tagline: Je suis un ingénieur DataOps et MLOps, passionné par l'IA et le Machine Learning. J'ai travaillé sur des projets de Machine Learning et d'IA générative. J'ai également une expérience dans le déploiement de modèles de Machine Learning en production.
+  tagline: |
+    Bienvenue sur mon site dédié à la <span class="cu-underline">Data Ingénierie et l'IA.</span>
+    Il s'agit d'une <span class="cu-underline">ressource documentaire</span> où je partage mes connaissances et mes expériences.
+    Vous y trouverez des guides et des projets concrets pour comprendre les techniques, outils et pratiques qui connectent le monde des données à celui de l'intelligence artificielle.
   image:
     file: ../../assets/houston.webp
   actions:
@@ -14,38 +17,38 @@ hero:
       link: /website/guides/example
       icon: right-arrow
       variant: secondary
+    - text: Qui suis-je ?
+      link: /website/guides/example
+      icon: external
+      variant: secondary
 ---
 
 import { LinkCard, CardGrid, Badge } from "@astrojs/starlight/components"
 
-## Présentation
-
-Je suis un ingénieur DataOps et MLOps, passionné par l'IA et le Machine Learning. J'ai travaillé sur des projets de Machine Learning et d'IA générative. J'ai également une expérience dans le déploiement de modèles de Machine Learning en production.
-
-### Parcourir les grandes thématiques
+### Découvrez les thématiques
 
 <CardGrid>
   <LinkCard
     href="/website/guides/example"
-    title="Python <span class='text-xs bg-yellow-200 text-gray-700 px-2 rounded-lg align-super'>developpement<span>"
+    title="Python <span class='cu-badge'>developpement<span>"
     description="Guide pour apprendre la programmation Python, des bases aux concepts
     avancés."
   ></LinkCard>
   <LinkCard
     href="#"
-    title="ML, LLM et IA Générative <span class='text-xs bg-orange-200 text-gray-700 px-2 rounded-lg align-super'>à venir<span>"
+    title="ML, LLM et IA Générative <span class='cu-badge'>à venir<span>"
     description="Introduction au Machine Learning, les grands modèles de langue et les outils pour l'IA moderne."
   />
   <LinkCard
     href="#"
-    title="Cloud AWS <span class='text-xs bg-orange-200 text-gray-700 px-2 rounded-lg align-super'>à venir<span>"
+    title="Cloud AWS <span class='cu-badge'>à venir<span>"
     description="
     Présentations des outils et des services du cloud AWS pour l'IA et le
     machine learning."
   />
   <LinkCard
     href="#"
-    title="Cas d'usage et projets <span class='text-xs bg-orange-200 text-gray-700 px-2 rounded-lg align-super'>à venir<span>"
-    description="Mise en oeuvre de projets et de cas d'usage en IA sur AWS."
+    title="Cas d'usage et projets <span class='cu-badge'>à venir<span>"
+    description="Mise en oeuvre de projets et de cas d'usage en Data et IA sur AWS."
   />
 </CardGrid>

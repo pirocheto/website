@@ -9,7 +9,7 @@ export default defineConfig({
   base: "/website/",
   integrations: [
     starlight({
-      title: "MLDATA",
+      title: "DATA&AI",
       customCss: [
         // Chemin vers vos style de base de Tailwind:
         "./src/custom.css",
@@ -35,6 +35,7 @@ export default defineConfig({
       ],
       components: {
         Header: "./src/components/Header.astro",
+        Hero: "./src/components/Hero.astro",
       },
     }),
     tailwind({
