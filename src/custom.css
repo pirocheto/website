@@ -2,20 +2,25 @@
   color: var(--sl-color-text-gray);
 }
 
+.sl-link-button.secondary {
+  border-color: var(--sl-color-text-accent);
+  border-width: 2.5px;
+  color: var(--sl-color-text-accent);
+  font-weight: bold;
+}
+
 .cu-underline {
   text-decoration: underline;
-  text-decoration-color: var(--sl-color-accent);
+  text-decoration-color: var(--sl-color-text-accent);
   text-underline-offset: 4px;
   text-decoration-thickness: 4px;
 }
 
-/* text-xs bg-accent-600 text-gray-200 px-2 rounded-lg align-super  */
-
 .cu-badge {
   font-size: 0.75rem; /* 12px */
   line-height: 1rem;
-  background-color: var(--sl-color-accent);
-  color: var(--sl-color-gray-7);
+  background-color: var(--sl-color-text-accent);
+  color: var(--sl-color-gray-6);
   padding-left: 0.5rem; /* 8px */
   padding-right: 0.5rem; /* 8px */
   border-radius: 0.5rem;
