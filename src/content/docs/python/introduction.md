@@ -18,9 +18,9 @@ Vous découvrirez ce qu’est Python, pourquoi il est utile, et comment l’util
 
 ## Python c'est quoi ?
 
-Python est un langage de programmation, c’est-à-dire un outil qui permet de donner des instructions à un ordinateur pour qu’il réalise des tâches. Il a été créé pour être simple à comprendre et à utiliser, même pour les personnes qui n’ont jamais programmé auparavant. Sa façon d’écrire des instructions ressemble presque à de l’anglais, ce qui le rend idéal pour les débutants. Avec Python, vous pouvez créer des choses variées comme des sites web, des applications ou encore des programmes pour automatiser des tâches répétitives.
+A ce stade vous savez déjà que Python est un langage de programmation. Plus concrêtement il sagit d'un outil qui permet de donner des instructions à un ordinateur pour qu’il réalise des tâches. Il a été créé pour être simple à comprendre et à utiliser, même pour les personnes qui n’ont jamais programmé auparavant. Sa façon d’écrire des instructions ressemble presque à de l’anglais, ce qui le rend idéal pour les débutants. Avec Python, vous pouvez créer des choses variées comme des sites web, des applications ou encore des programmes pour automatiser des tâches répétitives.
 
-Un des grands avantages de Python, c’est que vous pouvez tester vos idées immédiatement. Vous écrivez une commande, vous la faites fonctionner, et vous voyez tout de suite le résultat. C’est donc un très bon outil pour apprendre et expérimenter. En plus, il y a une grande communauté de gens partout dans le monde qui utilisent Python et partagent des astuces, des outils, et des solutions pour rendre les choses encore plus simples.
+Un des grands avantages de Python, c’est que vous pouvez tester vos idées immédiatement. Vous écrivez une commande, vous la faites fonctionner, et vous voyez tout de suite le résultat. C’est donc un très bon outil pour apprendre et expérimenter. En plus, il existe une grande communauté de gens partout dans le monde qui utilisent Python et partagent des astuces, des outils, et des solutions pour rendre les choses encore plus simples.
 
 ## Un peu d'histoire ...
 

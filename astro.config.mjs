@@ -28,6 +28,10 @@ export default defineConfig({
             { label: "Introduction", slug: "python/introduction" },
           ],
         },
+        {
+          label: "Références",
+          slug: "references",
+        },
       ],
       components: {
         Header: "./src/components/Header.astro",
