@@ -24,8 +24,8 @@ export default defineConfig({
         {
           label: "Python",
           items: [
-            // Each item here is one entry in the navigation menu.
             { label: "Introduction", slug: "python/introduction" },
+            { label: "Installation", slug: "python/installation" },
           ],
         },
         {

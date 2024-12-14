@@ -1,0 +1,106 @@
+---
+title: Installation
+---
+
+import { Steps } from "@astrojs/starlight/components"
+import { Tabs, TabItem } from "@astrojs/starlight/components"
+import { Aside } from "@astrojs/starlight/components"
+import { Code } from "@astrojs/starlight/components"
+
+## Installation de Python
+
+Pour commencer à programmer en Python, vous devez installer Python sur votre ordinateur.
+En réalité ce que vous installez est <span class='cu-underline'>l'interpréteur Python</span>, qui est le programme qui <span class='cu-underline'>exécute les instructions</span> que vous écrivez en Python.
+Voici comment procéder en fonction de votre système d'exploitation.
+
+<Tabs>
+  <TabItem label="Windows">
+    <Steps>
+      <ol>
+        <li>
+          **Aller sur le site officiel de Python:** <br />
+          Rendez-vous sur https://www.python.org/.
+        </li>
+        <li>
+          **Télécharger Python:** <br />
+          Cliquez sur le bouton "Download" en haut de la page. Le site détecte automatiquement
+          votre système d'exploitation et propose la version adaptée (par exemple,
+          "Download Python 3.x.x for Windows"). Téléchargez le fichier exécutable
+          .exe.
+        </li>
+        <li>
+          **Exécuter le fichier d’installation:** <br /> Double-cliquez sur le
+          fichier .exe que vous venez de télécharger.
+        </li>
+        <li>
+          **Activer l'option "Add Python to PATH":** <br /> Sur la première
+          fenêtre de l'installation, cochez Add Python 3.x to PATH. Cela
+          facilite l'utilisation de Python depuis le terminal ou l'invite de
+          commande.
+        </li>
+      </ol>
+    </Steps>
+  </TabItem>
+  <TabItem label="macOS">
+    <Steps>
+      <ol>
+        <li>
+          **Aller sur le site officiel de Python:** <br /> Rendez-vous sur
+          https://www.python.org/.
+        </li>
+        <li>
+          **Télécharger Python:** <br />
+          Cliquez sur le bouton "Download" en haut de la page. Le site détecte automatiquement
+          votre système d'exploitation et propose la version adaptée (par exemple,
+          "Download Python 3.x.x for MacOS"). Téléchargez le fichier exécutable .pkg.
+        </li>
+        <li>
+          **Ouvrir le fichier téléchargé:** <br />
+          Double-cliquez sur le fichier .pkg que vous venez de télécharger.
+        </li>
+        <li>
+          **Suivre les instructions de l’assistant d’installation:**
+          <ol>
+            <li>Cliquez sur Continue à chaque étape.</li>
+            <li>Acceptez les termes et conditions.</li>
+            <li>Laissez les options par défaut si vous débutez.</li>
+          </ol>
+        </li>
+      </ol>
+    </Steps>
+  </TabItem>
+  <TabItem label="Linux">
+    L'installation de Python sur Linux peut varier légèrement en fonction de la
+    distribution que vous utilisez (par exemple, Ubuntu, Fedora, Debian, etc.),
+    mais en général, la procédure est assez similaire. Je vous conseille de
+    procéder à l'installation de Python en ligne de commande, qui est la méthode
+    la plus courante et la plus simple sur Linux. Ci-dessous, je vous donne un
+    exemple pour Ubuntu, mais vous pouvez adapter les commandes à votre
+    distribution.
+    <Steps>
+      <ol>
+        <li>
+          **Ouvrir un terminal:** <br /> Ouvrez un terminal en appuyant sur
+          `Ctrl + Alt + T`.
+        </li>
+        <li>
+          **Installer Python:** <br /> Tapez la commande suivante pour installer
+          Python 3:
+          <Code
+            code={`sudo apt update\nsudo apt install python3`}
+            lang="bash"
+          />
+        </li>
+        <li>
+          **Vérifier l'installation:** <br />
+          Pour vérifier que Python est bien installé, ouvrez un nouveau terminal
+          et tapez:
+          <Code code={`bash python3 --version`} lang="bash" />
+          Vous devriez voir s'afficher la version de Python installée.
+        </li>
+      </ol>
+    </Steps>
+  </TabItem>
+</Tabs>
+
+## Installation d'un environnement de développement (IDE)
