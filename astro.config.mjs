@@ -10,6 +10,12 @@ export default defineConfig({
   integrations: [
     starlight({
       title: "DATA&AI",
+      locales: {
+        root: {
+          label: "Français",
+          lang: "fr",
+        },
+      },
       customCss: [
         // Chemin vers vos style de base de Tailwind:
         "./src/custom.css",
