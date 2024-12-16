@@ -15,6 +15,40 @@ import { Code } from "@astrojs/starlight/components"
   passer directement à la section suivante.
 </Aside>
 
+## Le terminal
+
+Avant de commencer à programmer en Python, vous devez comprendre ce qu'est un terminal et comment l'ouvrir.
+
+Un **terminal**, également appelé console ou ligne de commande, est une **interface textuelle qui permet aux utilisateurs d'interagir directement avec un système d'exploitation** en saisissant des commandes.
+Contrairement aux interfaces graphiques, où les actions se font via des clics, le terminal exécute des commandes écrites, offrant ainsi un contrôle précis et puissant sur les fichiers, les processus et les paramètres du système.
+Il est souvent utilisé pour naviguer dans les dossiers, exécuter des scripts, installer des logiciels, ou effectuer des tâches administratives.
+Le terminal est particulièrement apprécié des développeurs pour son efficacité et sa flexibilité.
+
+Dans la suite de ce guide dédié à Python vous aurez souvent besoin d'utiliser le terminal pour exécuter des commandes et des scripts.
+Vous devez donc au minimum savoir comment l'ouvrir sur votre système d'exploitation.
+
+<Tabs syncKey="os">
+  <TabItem label="Windows">
+    Appuyez sur `Win + R` pour ouvrir la boîte de dialogue "Exécuter". <br />
+    Tapez `powershell` et appuyez sur `Entrée`: Cela ouvrira la fenêtre du terminal.
+  </TabItem>
+  <TabItem label="macOS">
+    Ouvrez le Finder, puis allez dans Applications > Utilitaires. <br />
+    Double-cliquez sur "Terminal" pour ouvrir la fenêtre du terminal.
+  </TabItem>
+  <TabItem label="Linux">
+    Ouvrez un terminal en appuyant sur `Ctrl + Alt + T`. <br />
+    Vous pouvez également le trouver dans le menu des applications sous "Terminal".
+  </TabItem>
+</Tabs>
+
+Au premier abord, le terminal peut sembler un peu austère et intimidant, mais ne vous inquiétez pas, vous n'aurez pas besoin de connaître toutes les commandes pour commencer à programmer en Python.
+Avec le temps, vous apprendrez les commandes les plus courantes et vous vous sentirez de plus en plus à l'aise.
+
+Voici à quoi ressemble un terminal sur macOS:
+
+![Terminal macOS](./img/terminal-macos.png)
+
 ## Installation de Python
 
 ![Python logo](./img/python-logo.svg)
@@ -22,8 +56,8 @@ import { Code } from "@astrojs/starlight/components"
 Pour commencer à programmer en Python, vous devez installer Python sur votre ordinateur.
 Voici comment procéder en fonction de votre système d'exploitation.
 
-<Tabs>
-  <TabItem label="Windows"    >
+<Tabs syncKey="os">
+  <TabItem label="Windows">
     <Steps>
       <ol>
         <li>
@@ -54,9 +88,9 @@ Voici comment procéder en fonction de votre système d'exploitation.
           Vous devriez voir s'afficher la version de Python installée.
         </li>
       </ol>
-    </Steps  >
+    </Steps>
   </TabItem>
-  <TabItem label="macOS" >
+  <TabItem label="macOS" syncKey="macos">
     <Steps>
       <ol>
         <li>
@@ -80,7 +114,7 @@ Voici comment procéder en fonction de votre système d'exploitation.
             <li>Acceptez les termes et conditions.</li>
             <li>Laissez les options par défaut si vous débutez.</li>
           </ol>
-        </li  >
+        </li>
         <li>
           **Vérifier l'installation:** <br />
           Pour vérifier que Python est bien installé, ouvrez un terminal et tapez:
@@ -91,34 +125,33 @@ Voici comment procéder en fonction de votre système d'exploitation.
     </Steps>
   </TabItem>
   <TabItem label="Linux">
-      Python est généralement préinstallé sur les distributions Linux. 
-      Je vous conseille néanmoins d'installer la version la plus récente de Python 3 afin de bénéficier des dernières fonctionnalités.
-      <Steps  >
-        <ol>
-          <li>
-            **Ouvrir un terminal:** <br /> Ouvrez un terminal en appuyant sur
-            `Ctrl + Alt + T`.
-          </li>
-          <li>
-            **Installer Python:** <br /  > Tapez la commande suivante pour installer
-            Python 3:
-            <Code
-              code={`sudo apt update\nsudo apt install python3`}
-              lang="bash"
-            />
-          </li  >
-          <li>
-            **Vérifier l'installation:** <br />
-            Pour vérifier que Python est bien installé, ouvrez un nouveau terminal
-            et tapez:
-            <Code code={`python3 --version`} lang="bash" />
-            Vous devriez voir s'afficher la version de Python installée.
-          </li>
-        </ol>
-      </Steps>
-
-    </TabItem>
-
+    Python est généralement préinstallé sur les distributions Linux. Je vous
+    conseille néanmoins d'installer la version la plus récente de Python 3 afin
+    de bénéficier des dernières fonctionnalités.
+    <Steps>
+      <ol>
+        <li>
+          **Ouvrir un terminal:** <br /> Ouvrez un terminal en appuyant sur
+          `Ctrl + Alt + T`.
+        </li>
+        <li>
+          **Installer Python:** <br /> Tapez la commande suivante pour installer
+          Python 3:
+          <Code
+            code={`sudo apt update\nsudo apt install python3`}
+            lang="bash"
+          />
+        </li>
+        <li>
+          **Vérifier l'installation:** <br />
+          Pour vérifier que Python est bien installé, ouvrez un nouveau terminal
+          et tapez:
+          <Code code={`python3 --version`} lang="bash" />
+          Vous devriez voir s'afficher la version de Python installée.
+        </li>
+      </ol>
+    </Steps>
+  </TabItem>
 </Tabs>
 
 <Aside type="tip" title="L'interpréteur Python">
@@ -139,6 +172,15 @@ Voici comment procéder en fonction de votre système d'exploitation.
     un code machine (compréhensible directement par l’ordinateur) avant qu'il
     puisse être exécuté. On retrouve C, C++, Java et Rust parmi les langages
     compilés les plus populaires.
+  </p>
+</Aside>
+
+<Aside type="caution" title="Python 2">
+  <p>
+    Il existe deux versions majeures de Python: Python 2 et Python 3. Python 2
+    est une version plus ancienne qui n'est plus maintenue depuis 2020. Python 3
+    est la version actuelle et celle que vous devriez utiliser pour tous vos
+    projets.
   </p>
 </Aside>
 
@@ -167,7 +209,7 @@ Visual Studio Code est un IDE léger et puissant qui prend en charge de nombreux
 
 Pour l'installer, suivez les étapes suivantes:
 
-<Tabs>
+<Tabs syncKey="os">
   <TabItem label="Windows">
     <Steps>
       <ol>
