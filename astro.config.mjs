@@ -9,7 +9,7 @@ export default defineConfig({
   base: "/website/",
   integrations: [
     starlight({
-      title: "DATA&AI",
+      title: "DATA&IA",
       locales: {
         root: {
           label: "Français",
