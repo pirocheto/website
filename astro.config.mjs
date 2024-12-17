@@ -35,6 +35,12 @@ export default defineConfig({
           ],
         },
         {
+          label: "Organisation des données",
+          items: [
+            { label: "Les types de systèmes", slug: "data/system-types" },
+          ],
+        },
+        {
           label: "Références",
           slug: "references",
         },
