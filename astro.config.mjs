@@ -32,6 +32,7 @@ export default defineConfig({
           items: [
             { label: "Introduction", slug: "python/introduction" },
             { label: "Installation", slug: "python/installation" },
+            { label: "Premiers pas", slug: "python/get-started" },
           ],
         },
         {

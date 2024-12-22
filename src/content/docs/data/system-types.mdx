@@ -2,3 +2,78 @@
 title: Types de systèmes
 lastUpdated: 2024-12-15
 ---
+
+Les systèmes informatiques sont conçus pour traiter et stocker des données en fonction des besoins des utilisateurs.
+Il existe différents types de systèmes, chacun ayant des caractéristiques spécifiques pour répondre à des besoins particuliers.
+
+## OLTP (Online Transaction Processing)
+
+Le système OLTP (pour Online Transaction Processing, ou traitement des transactions en ligne)
+est un type de système informatique conçu pour gérer et exécuter des transactions en ligne rapidement et de manière fiable.
+Il est largement utilisé dans les applications transactionnelles où des opérations fréquentes de lecture et d'écriture sur des bases de données sont nécessaires.
+
+Voici les principales caractéristiques d'un système OLTP:
+
+### Définition d'une transaction
+
+Une transaction est une unité de travail logique qui regroupe plusieurs opérations, comme des insertions, des mises à jour ou des suppressions, et qui doit être réalisée de manière atomique (tout ou rien). Par exemple :
+
+- Une commande passée sur un site d'e-commerce.
+- Un transfert d'argent entre deux comptes bancaires.
+- Une réservation de billet d'avion.
+
+### Les principes ACID
+
+Les systèmes OLTP respectent les propriétés ACID pour garantir l'intégrité des transactions:
+
+- **Atomicité**: Une transaction est exécutée en totalité ou pas du tout.
+- **Cohérence**: Une transaction amène la base de données d'un état cohérent à un autre.
+- **Isolation**: Les transactions simultanées ne se perturbent pas mutuellement.
+- **Durabilité**: Une fois une transaction validée, ses effets sont permanents, même en cas de panne.
+
+### Exemples d'utilisation
+
+Les systèmes OLTP sont utilisés dans des domaines où la **rapidité** et la **fiabilité** sont essentielles:
+
+- Banques (traitement des retraits ou dépôts).
+- Commerce électronique (gestion des commandes et des paiements).
+- Compagnies aériennes (systèmes de réservation).
+- Supermarchés (gestion des stocks et paiements en caisse).
+
+## OLAP (Online Analytical Processing)
+
+Le système OLAP (pour Online Analytical Processing, ou traitement analytique en ligne)
+est un type de système informatique conçu pour l'analyse de données multidimensionnelles.
+
+Voici les principales caractéristiques d'un système OLAP:
+
+### Analyse multidimensionnelle
+
+Les systèmes OLAP permettent d'analyser les données selon plusieurs dimensions, comme le temps, la géographie, les produits ou les clients. Par exemple :
+
+- Analyse des ventes par région et par produit.
+- Suivi de l'évolution des stocks par magasin et par catégorie.
+- Analyse des performances des employés par trimestre.
+
+### Les principes ROLAP, MOLAP et HOLAP
+
+Il existe plusieurs approches pour stocker et traiter les données dans un système OLAP:
+
+- **ROLAP (Relational OLAP)**: Les données sont stockées dans une base de données relationnelle.
+- **MOLAP (Multidimensional OLAP)**: Les données sont stockées dans un cube multidimensionnel.
+- **HOLAP (Hybrid OLAP)**: Les données sont stockées à la fois dans une base de données relationnelle et dans un cube multidimensionnel.
+- **DOLAP (Desktop OLAP)**: Les données sont stockées et traitées sur un poste de travail.
+
+### Exemples d'utilisation
+
+Les systèmes OLAP sont utilisés dans des domaines où l'**analyse de données** est essentielle:
+
+- Business Intelligence (analyse des ventes, des performances, des coûts).
+- Planification et budgétisation (prévision des ventes, des dépenses).
+- Reporting et tableaux de bord (suivi des indicateurs de performance).
+- Exploration de données (découverte de tendances et de corrélations).
+
+## Systèmes hybrides
+
+Certains systèmes combinent les caractéristiques des systèmes OLTP et OLAP pour répondre à des besoins mixtes de transaction et d'analyse.
+Ces systèmes hybrides sont conçus pour gérer à la fois les opérations transactionnelles en ligne et les analyses de données en ligne.
