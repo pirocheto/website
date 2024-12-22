@@ -1,0 +1,135 @@
+---
+title: Variables et types de données
+lastUpdated: 2024-12-22
+---
+
+import { Aside } from "@astrojs/starlight/components"
+
+## Variables
+
+### Définition
+
+Une variable est un espace en mémoire que l’on réserve pour stocker une donnée.
+Imaginez une boîte avec une étiquette dessus.
+L'étiquette représente le nom de la variable, et le contenu de la boîte représente la valeur stockée.
+Vous pouvez changer le contenu de la boîte sans changer son étiquette.
+
+- **Nom de la variable**: Sert d’étiquette pour identifier l’information stockée.
+- **Valeur de la variable**: C’est l’information (ou donnée) que la variable contient.
+- **Type de la variable**: Python attribue automatiquement un type à la valeur stockée (par exemple: entier, texte, liste, etc.).
+
+### Déclaration
+
+En Python, vous pouvez déclarer une variable en lui attribuant une valeur.
+Il suffit d’écrire un nom de variable suivi du signe égal = et de la valeur à lui attribuer.
+
+```python
+variable_name = value
+```
+
+Exemples simples:
+
+```python
+x = 10                      # x contains an integer
+name = "Alice"              # name contains a string
+```
+
+Une fois la variable créée, vous pouvez y faire référence dans le reste de votre programme :
+
+```python
+print(x)                    # Output: 10
+print(name)                 # Output: Alice
+```
+
+### Changer la valeur d'une variable
+
+Vous pouvez changer la valeur d'une variable en lui attribuant une nouvelle valeur.
+
+```python
+x = 20                      # x contains 20
+x = 25                      # x contains 25
+```
+
+Bien que ce ne soit pas consseillé, sachez que python vous permet d'affecter un tout nouveau type à une variable.
+
+```python
+x = 10                      # x contains an integer
+x = "Hello"                 # x contains a string
+```
+
+<Aside type="tip" title="Typage Dynamique vs Statique">
+  Python est un langage de programmation à **typage dynamique**. Cela signifie
+  que vous n'avez pas besoin de déclarer le type d'une variable avant de
+  l'utiliser. Le type de la variable est déterminé automatiquement en fonction
+  de la valeur qui lui est attribuée. C'est pourquoi vous pouvez changer le type
+  d'une variable à tout moment.
+  <br />
+  D'autres langages, comme Java ou C++, sont à **typage statique**, ce qui
+  signifie que vous devez déclarer le type d'une variable avant de l'utiliser.
+  Par exemple, en Java, vous devez écrire `int x = 10;` pour déclarer une
+  variable entière.
+</Aside>
+
+### Règles de nommage
+
+Ces règles sont imposées par la syntaxe du langage Python. Elles doivent être respectées pour que votre code fonctionne correctement.
+
+- Le nom d'une variable doit commencer par une lettre (majuscule ou minuscule) ou un underscore `_`. Elle ne peut pas commencer par un chiffre.
+  - ✅ age, \_name, variable1
+  - ❌ 1variable, user-name
+- Le nom d'une variable ne peut contenir que des lettres, des chiffres et des underscores `_`. Elle ne peut pas contenir de caractères spéciaux comme -, !, ou ?.
+- Les espaces ne sont pas autorisés dans les noms de variables. Utilisez un underscore \_ pour séparer les mots.
+  - ✅ user_name
+  - ❌ user name
+- Les noms de variables sont sensibles à la casse. Cela signifie que `age`, `Age` et `AGE` sont trois variables différentes.
+- Évitez d'utiliser des mots-clés réservés par Python comme noms de variables. Par exemple, `print`, `for`, `if`, `else`, `while`, etc. Vous apprendrez à les reconnaître au fur et à mesure que vous progresserez dans votre apprentissage.
+
+### Convention de nommage
+
+Il existe églament un ensemble de convension de conventions pour nommer les variables en Python.
+Vous n'êtes pas obligé de les appliquer pour que votre code fonctionne correctement, mais elles rendront votre code plus lisible et compréhensible.
+Elles réduisent également les risques de conflits de noms et de confusions.
+
+- Utilisez des noms de variables significatifs et descriptifs.
+
+❌ On ne comprend pas ce que représentent x, y et z.
+
+```python
+x = 10
+y = 20
+z = 30
+```
+
+✅ On comprend que `item_price` représente le prix d'un article, `tax` représente la taxe et `total_price` représente le prix total.
+
+```python
+item_price = 20
+tax = 15
+total_price = 35
+```
+
+- Suivez la convention snake_case.
+
+Cela signifie que les mots sont en minuscules et séparés par des underscores \_.
+
+❌ Ces noms ne sont pas en snake_case:
+
+```python
+itemPrice = 20
+totalPrice = 35
+```
+
+✅ Ces noms sont en snake_case:
+
+```python
+item_price = 20
+total_price = 35
+```
+
+### Importance des variables en programmation
+
+- **Code readability**: Les variables permettent d’écrire un code plus lisible et compréhensible. Au lieu d’écrire directement des valeurs dans le code, vous utilisez des noms qui expliquent ce que ces valeurs représentent.
+
+- **Reusability**: Vous pouvez réutiliser la valeur d’une variable à plusieurs endroits sans avoir à la répéter.
+
+- **Flexibility**: Si la valeur d’une donnée doit changer, il suffit de modifier la valeur de la variable, et cela- mettra à jour tout le code qui l’utilise.

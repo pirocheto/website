@@ -30,9 +30,10 @@ export default defineConfig({
         {
           label: "Python",
           items: [
-            { label: "Introduction", slug: "python/introduction" },
-            { label: "Installation", slug: "python/installation" },
-            { label: "Premiers pas", slug: "python/get-started" },
+            { label: "Introduction", slug: "python/01-introduction" },
+            { label: "Installation", slug: "python/02-installation" },
+            { label: "Premiers pas", slug: "python/03-get-started" },
+            { label: "Variables et Types", slug: "python/04-variables-types" },
           ],
         },
         {
