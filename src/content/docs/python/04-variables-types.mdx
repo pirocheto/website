@@ -84,9 +84,9 @@ Ces règles sont imposées par la syntaxe du langage Python. Elles doivent être
 - Les noms de variables sont sensibles à la casse. Cela signifie que `age`, `Age` et `AGE` sont trois variables différentes.
 - Évitez d'utiliser des mots-clés réservés par Python comme noms de variables. Par exemple, `print`, `for`, `if`, `else`, `while`, etc. Vous apprendrez à les reconnaître au fur et à mesure que vous progresserez dans votre apprentissage.
 
-### Convention de nommage
+### Conventions de nommage
 
-Il existe églament un ensemble de convension de conventions pour nommer les variables en Python.
+Il existe églament un ensemble de conventions pour nommer les variables en Python.
 Vous n'êtes pas obligé de les appliquer pour que votre code fonctionne correctement, mais elles rendront votre code plus lisible et compréhensible.
 Elles réduisent également les risques de conflits de noms et de confusions.
 
@@ -133,3 +133,165 @@ total_price = 35
 - **Reusability**: Vous pouvez réutiliser la valeur d’une variable à plusieurs endroits sans avoir à la répéter.
 
 - **Flexibility**: Si la valeur d’une donnée doit changer, il suffit de modifier la valeur de la variable, et cela- mettra à jour tout le code qui l’utilise.
+
+## Types
+
+Dans les exemples précédents nous avons utilisé des variables de type entier (int) et de type chaîne de caractères (str).
+Python possède de nombreux autres types de données intégrés, et vous pouvez également créer vos propres types de données (Nous verrons cela plus tard).
+Dans cette section, nous allons explorer les types de données les plus courants en Python.
+
+### Types basiques
+
+Python possède plusieurs types de données intégrés qui vous permettent de stocker différents types de valeurs. Voici quelques-uns des types de données les plus courants:
+
+#### Entier (int)
+
+Les entiers sont des nombres entiers positifs ou négatifs sans décimales.
+
+```python
+x = 10
+y = -5
+```
+
+#### Flottant (float)
+
+Les flottants sont des nombres à virgule flottante, c'est-à-dire des nombres avec une partie décimale.
+
+```python
+pi = 3.14
+price = 19.99
+```
+
+#### Chaîne de caractères (str)
+
+Les chaînes de caractères sont des séquences de caractères, comme du texte.
+
+```python
+name = "Alice"
+message = "Hello, World!"
+```
+
+#### Booléen (bool)
+
+Les booléens sont des valeurs binaires qui peuvent être `True` (vrai) ou `False` (faux).
+
+```python
+is_active = True
+is_admin = False
+```
+
+#### None
+
+`None` est une valeur spéciale en Python qui représente l'absence de valeur.
+
+```python
+result = None
+```
+
+### Les structures de données
+
+Python propose également des structures de données plus complexes pour stocker des collections de valeurs.
+
+#### Liste (list)
+
+Les listes sont des collections ordonnées d'éléments. Les éléments d'une liste peuvent être de différents types.
+
+```python
+numbers = [1, 2, 3, 4, 5]
+names = ["Alice", "Bob", "Charlie"]
+```
+
+#### Tuple
+
+Les tuples sont des collections ordonnées d'éléments immuables. Une fois créé, un tuple ne peut pas être modifié.
+
+```python
+point = (10, 20)
+colors = ("red", "green", "blue")
+```
+
+<Aside type="tip" title="Immuabilité VS Mutabilité">
+  Les listes sont **mutables**, ce qui signifie que vous pouvez ajouter,
+  supprimer ou modifier des éléments après leur création. Les tuples sont
+  **immuables**, ce qui signifie que vous ne pouvez pas modifier les éléments
+  d'un tuple une fois qu'il a été créé.
+</Aside>
+
+#### Dictionnaire (dict)
+
+Les dictionnaires sont des collections non ordonnées d'éléments, stockés sous forme de paires clé-valeur.
+
+```python
+person = {
+  "name": "Alice",
+  "age": 30,
+  "city": "Paris"
+}
+```
+
+#### Ensemble (set)
+
+Les ensembles sont des collections non ordonnées d'éléments uniques.
+
+```python
+fruits = {"apple", "banana", "orange"}
+```
+
+### Tableau récapitulatif
+
+<table>
+    <thead>
+        <tr>
+            <th>Type de données</th>
+            <th>Exemple</th>
+            <th>Description</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>int</td>
+            <td>10</td>
+            <td>Entier</td>
+        </tr>
+        <tr>
+            <td>float</td>
+            <td>3.14</td>
+            <td>Flottant</td>
+        </tr>
+        <tr>
+            <td>str</td>
+            <td>"Alice"</td>
+            <td>Chaîne de caractères</td>
+        </tr>
+        <tr>
+            <td>bool</td>
+            <td>True</td>
+            <td>Booléen</td>
+        </tr>
+        <tr>
+            <td>None</td>
+            <td>None</td>
+            <td>Valeur nulle</td>
+        </tr>
+        <tr>
+            <td>list</td>
+            <td>[1, 2, 3]</td>
+            <td>Liste</td>
+        </tr>
+        <tr>
+            <td>tuple</td>
+            <td>(10, 20)</td>
+            <td>Tuple</td>
+        </tr>
+        <tr>
+            <td>dict</td>
+            <td>\{"name": "Alice"\}</td>
+            <td>Dictionnaire</td>
+        </tr>
+        <tr>
+            <td>set</td>
+            <td>\{"apple", "banana"\}</td>
+            <td>Ensemble</td>
+        </tr>
+    </tbody>
+</table>
