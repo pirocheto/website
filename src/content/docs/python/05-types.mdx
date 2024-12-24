@@ -1,0 +1,315 @@
+---
+title: Types de données
+lastUpdated: 2024-12-22
+tableOfContents:
+  maxHeadingLevel: 3
+---
+
+import { Aside } from "@astrojs/starlight/components"
+
+Dans les exemples précédents nous avons utilisé des variables de type entier (int) et de type chaîne de caractères (str).
+Python possède de nombreux autres types de données intégrés, et vous pouvez également créer vos propres types de données (Nous verrons cela plus tard).
+Dans cette section, nous allons explorer les types de données les plus courants en Python.
+
+## Types basiques
+
+Python possède plusieurs types de données intégrés qui vous permettent de stocker différents types de valeurs. Voici quelques-uns des types de données les plus courants:
+
+### Entier (int)
+
+Les entiers sont des nombres entiers positifs ou négatifs sans décimales.
+
+```python
+x = 10
+y = -5
+```
+
+### Flottant (float)
+
+Les flottants sont des nombres à virgule flottante, c'est-à-dire des nombres avec une partie décimale.
+
+```python
+pi = 3.14
+price = 19.99
+```
+
+### Chaîne de caractères (str)
+
+Les chaînes de caractères sont des séquences de caractères, comme du texte.
+
+```python
+name = "Alice"
+message = "Hello, World!"
+```
+
+### Booléen (bool)
+
+Les booléens sont des valeurs binaires qui peuvent être `True` (vrai) ou `False` (faux).
+
+```python
+is_active = True
+is_admin = False
+```
+
+### None
+
+`None` est une valeur spéciale en Python qui représente l'absence de valeur.
+
+```python
+result = None
+```
+
+## Les structures de données
+
+Python propose également des structures de données plus complexes pour stocker des collections de valeurs.
+
+### Liste (list)
+
+Une liste est une structure de données qui permet de stocker **une collection d’éléments dans un ordre spécifique**.
+Ces éléments peuvent être de différents types (nombres, chaînes de caractères, autres listes, etc.) et sont **modifiables**, c'est-à-dire que vous pouvez ajouter, modifier ou supprimer des éléments à tout moment.
+
+```python
+numbers = [1, 2, 3, 4, 5]
+names = ["Alice", "Bob", "Charlie"]
+```
+
+#### L'analogie du train
+
+Imaginez un train composé de plusieurs wagons, chacun transportant quelque chose de différent.
+Une liste en Python fonctionne exactement comme ce train: elle regroupe plusieurs éléments (les wagons) alignés dans un ordre précis.
+Voici comment cette analogie peut vous aider à comprendre les caractéristiques des listes.
+
+#### 1. Les wagons comme éléments d'une liste
+
+Chaque wagon du train contient une marchandise ou des passagers spécifiques. De la même manière, chaque élément d’une liste peut contenir une valeur, qu’il s’agisse d’un nombre, d’une chaîne de caractères, ou même d’un autre type de donnée.
+
+```python
+train = ["passengers", "coal", "food", "luggage"]
+```
+
+Le premier wagon transporte des passengers.
+Le deuxième wagon transporte du charbon.
+Et ainsi de suite…
+
+#### 2. L'ordre des wagons
+
+Comme dans un train, l’ordre des wagons est important. Si vous changez l’ordre des wagons, cela change la structure du train.
+Une liste en Python conserve également l’ordre dans lequel les éléments ont été ajoutés.
+
+```python
+train = ["engine", "coal", "passengers"]
+```
+
+Le premier élément de la liste est toujours "engine".
+
+Si vous changez cet ordre, vous obtiendrez un train différent.
+
+```python
+train = ["passengers", "coal", "engine"]
+```
+
+Le sens du train change, tout comme l'interprétation des données dans une liste.
+
+#### 3. Ajouter ou retirer des wagons
+
+Un train peut être modifié: vous pouvez ajouter un nouveau wagon pour transporter des marchandises supplémentaires ou retirer un wagon qui n’est plus nécessaire. Une liste fonctionne de la même manière: vous pouvez ajouter, modifier ou supprimer des éléments selon vos besoins.
+
+Ajouter un wagon (élément):
+
+```python
+train = ["engine", "coal"]
+train.append("passengers")  # Ajoute un wagon pour les passagers
+print(train)                # Affiche: ["engine", "coal", "passengers"]
+```
+
+Ajouter un wagon à une position spécifique:
+
+```python
+train.insert(1, "luggage")  # Ajoute un wagon pour les bagages après l'engine
+print(train)                # Affiche : ["engine", "luggage", "coal", "passengers"]
+```
+
+Rétirer un wagon (élément):
+
+```python
+train.remove("coal")        # Retire le wagon de charbon
+print(train)                # Affiche: ["engine", "luggage", "passengers"]
+```
+
+#### 4. La position des wagons
+
+Chaque wagon a une position spécifique, appelée indice dans une liste. Ces indices commencent toujours à 0.
+
+Exemple:
+
+```python
+train = ["engine", "coal", "passengers"]
+print(train[0])  # Affiche : "engine" (le premier wagon)
+print(train[2])  # Affiche : "passengers" (le troisième wagon)
+```
+
+Indices négatifs pour remonter le train :
+Vous pouvez aussi utiliser des indices négatifs pour accéder aux wagons à partir de la fin:
+
+```python
+print(train[-1])  # Affiche : "passengers" (le dernier wagon)
+print(train[-2])  # Affiche : "coal" (l'avant-dernier wagon)
+```
+
+#### 5. Les wagons peuvent transporter tout type de chargement
+
+Certains wagons peuvent transporter des passagers, d’autres du charbon, et d’autres encore des conteneurs. De la même manière, une liste en Python peut contenir différents types de données dans un seul train.
+
+Exemple:
+
+```python
+train = ["engine", 100, True, ["baggage1", "baggage2"]]
+```
+
+- "engine": un wagon contenant une chaîne de caractères.
+- 100: un wagon contenant un nombre entier.
+- True: un wagon contenant une valeur booléenne.
+- ["baggage1", "baggage2"]: un wagon qui contient une sous-liste (des bagages).
+
+#### 6. Longueur du train
+
+Vous pouvez facilement compter le nombre de wagons dans votre train grâce à la fonction len(). Cela correspond à la longueur d’une liste.
+
+```python
+train = ["engine", "coal", "passengers", "luggage"]
+print(len(train))  # Affiche : 4 (le train a 4 wagons)
+```
+
+#### 7. Modifier un wagon en cours de route
+
+Un wagon peut être remplacé par un autre si nécessaire. Dans une liste, vous pouvez directement modifier un élément en utilisant son indice.
+
+```python
+train = ["engine", "coal", "passengers"]
+train[1] = "luggage"          # Remplace le charbon par les bagages
+print(train)                  # Affiche : ["engine", "luggage", "passengers"]
+```
+
+#### 8. Un train avec des sous-trains: Les listes imbriquées
+
+Certains trains transportent des wagons qui contiennent eux-mêmes des petits trains ou des conteneurs.
+En Python, une liste peut contenir une autre liste, ce qui permet de représenter des structures complexes.
+
+Exemple:
+
+```python
+train = [
+    "engine",
+    ["wagon1", "wagon2"],  # Un wagon contenant deux sous-wagons
+    "passengers"
+]
+print(train[1])         # Affiche : ["wagon1", "wagon2"]
+print(train[1][0])      # Affiche : "wagon1" (premier sous-wagon)
+```
+
+### Tuple
+
+Les tuples sont des collections ordonnées d'éléments immuables. Une fois créé, un tuple ne peut pas être modifié.
+
+```python
+point = (10, 20)
+colors = ("red", "green", "blue")
+```
+
+<Aside type="tip" title="Immuabilité VS Mutabilité">
+  Les listes sont **mutables**, ce qui signifie que vous pouvez ajouter,
+  supprimer ou modifier des éléments après leur création. Les tuples sont
+  **immuables**, ce qui signifie que vous ne pouvez pas modifier les éléments
+  d'un tuple une fois qu'il a été créé.
+</Aside>
+
+### Dictionnaire (dict)
+
+Les dictionnaires sont des collections non ordonnées d'éléments, stockés sous forme de paires clé-valeur.
+
+```python
+person = {
+  "name": "Alice",
+  "age": 30,
+  "city": "Paris"
+}
+```
+
+### Ensemble (set)
+
+Les ensembles sont des collections non ordonnées d'éléments uniques.
+
+```python
+fruits = {"apple", "banana", "orange"}
+```
+
+## Afficher le type d'une variable
+
+Si vous voulez connaître le type d'une variable, vous pouvez utiliser la fonction `type()`.
+
+```python
+x = 10
+print(type(x))  # Output: <class 'int'>
+
+name = "Alice"
+print(type(name))  # Output: <class 'str'>
+```
+
+## Tableau récapitulatif
+
+<table>
+    <thead>
+        <tr>
+            <th>Type de données</th>
+            <th>Exemple</th>
+            <th>Description</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>int</td>
+            <td>10</td>
+            <td>Entier</td>
+        </tr>
+        <tr>
+            <td>float</td>
+            <td>3.14</td>
+            <td>Flottant</td>
+        </tr>
+        <tr>
+            <td>str</td>
+            <td>"Alice"</td>
+            <td>Chaîne de caractères</td>
+        </tr>
+        <tr>
+            <td>bool</td>
+            <td>True</td>
+            <td>Booléen</td>
+        </tr>
+        <tr>
+            <td>None</td>
+            <td>None</td>
+            <td>Valeur nulle</td>
+        </tr>
+        <tr>
+            <td>list</td>
+            <td>[1, 2, 3]</td>
+            <td>Liste</td>
+        </tr>
+        <tr>
+            <td>tuple</td>
+            <td>(10, 20)</td>
+            <td>Tuple</td>
+        </tr>
+        <tr>
+            <td>dict</td>
+            <td>\{"name": "Alice"\}</td>
+            <td>Dictionnaire</td>
+        </tr>
+        <tr>
+            <td>set</td>
+            <td>\{"apple", "banana"\}</td>
+            <td>Ensemble</td>
+        </tr>
+    </tbody>
+</table>
